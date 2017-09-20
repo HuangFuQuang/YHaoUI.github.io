@@ -1,4 +1,777 @@
 
 YHaoUI官网
 欢迎使用
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=27955654&auto=1&height=66"></iframe>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <title>有好订餐平台</title>
+    <!--引入YHaoUI-->
+    <link rel="stylesheet" type="text/css" href="YHaoUi.css">
+    <link rel="stylesheet" type="text/css" href="ms.css">
+</head>
+<body class="yhao-bg_Lightgrey">
+<!--慢餐部分-->
+<div id="index"></div>
+<div id="Specific3" style="display: none">
+    <div class="yhao-container-A">
+        <article class="yhao-cells">
+            <h2 class="yhao-cells__title">
+                <span>请选择用餐人数</span>
+            </h2>
+            <div class="yhao-check_wrapper">
+                <label>
+                    <a class="yhao-btn yhao-btn_defaultB active">1人</a>
+                </label>
+                <label>
+                    <a class="yhao-btn yhao-btn_defaultB">2人</a>
+                </label>
+                <label>
+                    <a class="yhao-btn yhao-btn_defaultB">3人</a>
+                </label>
+                <label>
+                    <a class="yhao-btn yhao-btn_defaultB">4人</a>
+                </label>
+                <label>
+                    <a class="yhao-btn yhao-btn_defaultB">5人</a>
+                </label>
+                <label>
+                    <a class="yhao-btn yhao-btn_defaultB">6人</a>
+                </label>
+                <label>
+                    <a class="yhao-btn yhao-btn_defaultB">7人</a>
+                </label>
+                <label>
+                    <a class="yhao-btn yhao-btn_defaultB">8人</a>
+                </label>
+                <label>
+                    <a class="yhao-btn yhao-btn_defaultB">9人</a>
+                </label>
+                <label>
+                    <a class="yhao-btn yhao-btn_defaultB">10人</a>
+                </label>
+                <label>
+                    <a class="yhao-btn yhao-btn_defaultB">11人</a>
+                </label>
+                <label>
+                    <a class="yhao-btn yhao-btn_defaultB">更多</a>
+                </label>
+            </div>
+        </article>
+    </div>
+    <div class="yhao-Bottom-Nav">
+        <a class="yhao-btn yhao-btn_defaultB active">
+            开始点餐
+        </a>
+    </div>
+</div>
+<div id="Specific4" style="display: none">
+    <header>
+        <span>请选择</span>
+    </header>
+    <article class="yhao-cells add">
+        <a class="yhao-btn yhao-btn_defaultB">
+            <div>
+                <i class="yhao-icon-jiadanicon" style="color:#ff5b5a"></i>
+                <span>加单</span>
+            </div>
+        </a>
+    </article>
+    <article class="yhao-cells already">
+        <a class="yhao-btn yhao-btn_defaultB">
+            <div>
+                <i class="yhao-icon-yidiancaidanicon" style="color: #f7bf15"></i>
+                <span>已点菜单</span>
+            </div>
+        </a>
+    </article>
+    <article class="yhao-cells checkout">
+        <a class="yhao-btn yhao-btn_defaultB">
+            <div>
+                <i class="yhao-icon-jiezhangicon" style="color: #17b159"></i>
+                <span>结账</span>
+            </div>
+        </a>
+    </article>
+</div>
+<div id="order2" style="display: none">
+    <div class="yhao-container-B">
+        <article class="yhao-cells yhao-cells_order">
+            <h2 class="yhao-cells__title">
+                <span>菜单信息</span>
+            </h2>
+            <div class="yhao-cell">
+                <div class="yhao-cell__hd">
+                    1、B1单人套餐单人
+                </div>
+                <div class="yhao-cell__bd">
+                    <span>32</span>
+                </div>
+                <div class="yhao-cell__ft">
+                    <i class="yhao-icon-renminbi" style="font-size: 16px">12.00</i>
+                </div>
+                <ul class="yhao-cell__fd">
+                    <li>
+                        <span class="yhao-cell_fd_name">卤鸡翅卤鸡翅+￥2.5</span>
+                        <span class="yhao-cell_fd_price">￥2.5</span>
+                        <span class="yhao-cell_fd_num">10</span>
+                    </li>
+                    <li>
+                        <span class="yhao-cell_fd_name">鸡爪(中份)</span>
+                        <span class="yhao-cell_fd_price"></span>
+                        <span class="yhao-cell_fd_num">10</span>
+                    </li>
+                </ul>
+                <div class="yhao-cell__bz">
+                    (桂林米粉，粉要软，免辣、免葱)
+                </div>
+            </div>
+            <div class="yhao-cell">
+                <div class="yhao-cell__hd">
+                    2、B1单人套餐单人
+                </div>
+                <div class="yhao-cell__bd">
+                    <span>32</span>
+                </div>
+                <div class="yhao-cell__ft">
+                    <i class="yhao-icon-renminbi" style="font-size: 16px">12.00</i>
+                </div>
+                <ul class="yhao-cell__fd">
+                    <li>
+                        <span class="yhao-cell_fd_name">卤鸡翅卤鸡翅+￥2.5</span>
+                        <span class="yhao-cell_fd_price">￥2.5</span>
+                        <span class="yhao-cell_fd_num">10</span>
+                    </li>
+                    <li>
+                        <span class="yhao-cell_fd_name">鸡爪(中份)</span>
+                        <span class="yhao-cell_fd_price"></span>
+                        <span class="yhao-cell_fd_num">10</span>
+                    </li>
+                </ul>
+                <div class="yhao-cell__bz">
+                    (桂林米粉，粉要软，免辣、免葱)
+                </div>
+            </div>
+            <div class="yhao-cell">
+                <div class="yhao-cell__hd">
+                    1、B1单人套餐单人
+                </div>
+                <div class="yhao-cell__bd">
+                    <span>32</span>
+                </div>
+                <div class="yhao-cell__ft">
+                    <i class="yhao-icon-renminbi" style="font-size: 16px">12.00</i>
+                </div>
+                <ul class="yhao-cell__fd">
+                    <li>
+                        <span class="yhao-cell_fd_name">卤鸡翅卤鸡翅+￥2.5</span>
+                        <span class="yhao-cell_fd_price">￥2.5</span>
+                        <span class="yhao-cell_fd_num">10</span>
+                    </li>
+                    <li>
+                        <span class="yhao-cell_fd_name">鸡爪(中份)</span>
+                        <span class="yhao-cell_fd_price"></span>
+                        <span class="yhao-cell_fd_num">10</span>
+                    </li>
+                </ul>
+                <div class="yhao-cell__bz">
+                    (桂林米粉，粉要软，免辣、免葱)
+                </div>
+            </div>
+            <div class="yhao-cell">
+                <div class="yhao-cell__hd">
+                    2、B1单人套餐单人
+                </div>
+                <div class="yhao-cell__bd">
+                    <span>32</span>
+                </div>
+                <div class="yhao-cell__ft">
+                    <i class="yhao-icon-renminbi" style="font-size: 16px">12.00</i>
+                </div>
+                <ul class="yhao-cell__fd">
+                    <li>
+                        <span class="yhao-cell_fd_name">卤鸡翅卤鸡翅+￥2.5</span>
+                        <span class="yhao-cell_fd_price">￥2.5</span>
+                        <span class="yhao-cell_fd_num">10</span>
+                    </li>
+                    <li>
+                        <span class="yhao-cell_fd_name">鸡爪(中份)</span>
+                        <span class="yhao-cell_fd_price"></span>
+                        <span class="yhao-cell_fd_num">10</span>
+                    </li>
+                </ul>
+                <div class="yhao-cell__bz">
+                    (桂林米粉，粉要软，免辣、免葱)
+                </div>
+            </div>
+            <div class="yhao-cell">
+                <div class="yhao-cell__hd">
+                    1、B1单人套餐单人
+                </div>
+                <div class="yhao-cell__bd">
+                    <span>32</span>
+                </div>
+                <div class="yhao-cell__ft">
+                    <i class="yhao-icon-renminbi" style="font-size: 16px">12.00</i>
+                </div>
+                <ul class="yhao-cell__fd">
+                    <li>
+                        <span class="yhao-cell_fd_name">卤鸡翅卤鸡翅+￥2.5</span>
+                        <span class="yhao-cell_fd_price">￥2.5</span>
+                        <span class="yhao-cell_fd_num">10</span>
+                    </li>
+                    <li>
+                        <span class="yhao-cell_fd_name">鸡爪(中份)</span>
+                        <span class="yhao-cell_fd_price"></span>
+                        <span class="yhao-cell_fd_num">10</span>
+                    </li>
+                </ul>
+                <div class="yhao-cell__bz">
+                    (桂林米粉，粉要软，免辣、免葱)
+                </div>
+            </div>
+            <div class="yhao-cell">
+                <div class="yhao-cell__hd">
+                    2、B1单人套餐单人
+                </div>
+                <div class="yhao-cell__bd">
+                    <span>32</span>
+                </div>
+                <div class="yhao-cell__ft">
+                    <i class="yhao-icon-renminbi" style="font-size: 16px">12.00</i>
+                </div>
+                <ul class="yhao-cell__fd">
+                    <li>
+                        <span class="yhao-cell_fd_name">卤鸡翅卤鸡翅+￥2.5</span>
+                        <span class="yhao-cell_fd_price">￥2.5</span>
+                        <span class="yhao-cell_fd_num">10</span>
+                    </li>
+                    <li>
+                        <span class="yhao-cell_fd_name">鸡爪(中份)</span>
+                        <span class="yhao-cell_fd_price"></span>
+                        <span class="yhao-cell_fd_num">10</span>
+                    </li>
+                </ul>
+                <div class="yhao-cell__bz">
+                    (桂林米粉，粉要软，免辣、免葱)
+                </div>
+            </div>
+            <div class="yhao-cell">
+                <div class="yhao-cell__hd">
+                    1、B1单人套餐单人
+                </div>
+                <div class="yhao-cell__bd">
+                    <span>32</span>
+                </div>
+                <div class="yhao-cell__ft">
+                    <i class="yhao-icon-renminbi" style="font-size: 16px">12.00</i>
+                </div>
+                <ul class="yhao-cell__fd">
+                    <li>
+                        <span class="yhao-cell_fd_name">卤鸡翅卤鸡翅+￥2.5</span>
+                        <span class="yhao-cell_fd_price">￥2.5</span>
+                        <span class="yhao-cell_fd_num">10</span>
+                    </li>
+                    <li>
+                        <span class="yhao-cell_fd_name">鸡爪(中份)</span>
+                        <span class="yhao-cell_fd_price"></span>
+                        <span class="yhao-cell_fd_num">10</span>
+                    </li>
+                </ul>
+                <div class="yhao-cell__bz">
+                    (桂林米粉，粉要软，免辣、免葱)
+                </div>
+            </div>
+            <div class="yhao-cell">
+                <div class="yhao-cell__hd">
+                    2、B1单人套餐单人
+                </div>
+                <div class="yhao-cell__bd">
+                    <span>32</span>
+                </div>
+                <div class="yhao-cell__ft">
+                    <i class="yhao-icon-renminbi" style="font-size: 16px">12.00</i>
+                </div>
+                <ul class="yhao-cell__fd">
+                    <li>
+                        <span class="yhao-cell_fd_name">卤鸡翅卤鸡翅+￥2.5</span>
+                        <span class="yhao-cell_fd_price">￥2.5</span>
+                        <span class="yhao-cell_fd_num">10</span>
+                    </li>
+                    <li>
+                        <span class="yhao-cell_fd_name">鸡爪(中份)</span>
+                        <span class="yhao-cell_fd_price"></span>
+                        <span class="yhao-cell_fd_num">10</span>
+                    </li>
+                </ul>
+                <div class="yhao-cell__bz">
+                    (桂林米粉，粉要软，免辣、免葱)
+                </div>
+            </div>
+        </article>
+    </div>
+    <div class="yhao-Big-Bottom-Nav">
+        <div class="yhao-caidan">
+            <div class="yhao-caidan_total">
+                <span>菜单合计:</span>
+                <i class="yhao-icon-renminbi" style="color: #ff5b5a"></i>
+                <span style="color: #ff5b5a;margin-left: -4px">347.00</span>
+            </div>
+            <div class="yhao-caidan_num">
+                <span>数量:</span>
+                <span>22</span>
+            </div>
+        </div>
+        <!--当是立即下单时，会增加一个叫yhao-toback_invoicing与yhao-toback同级。'立即下单'这几个字使用数据绑定-->
+        <div class="yhao-toback">
+            <a class="yhao-btn yhao-btn_submit">
+                加单
+            </a>
+            <a class="yhao-btn yhao-btn_save">
+                结账
+            </a>
+            <a class="yhao-btn yhao-btn_back yhao-icon-back1">
+                返回
+            </a>
+        </div>
+    </div>
+</div>
+<div id="Receipt" style="display: none">
+    <div>
+        <img src="images/dindang.svg">
+        <p>订单已经提交，请留意状态回执</p>
+        <a class="yhao-btn yhao-btn_submit">好的</a>
+    </div>
+</div>
+<div id="order3" style="display: block">
+    <div class="yhao-container-B" id="wrapper">
+        <div>
+            <article class="yhao-cells yhao-cells_radio">
+                <h2 class="yhao-cells__title">
+                    <span>支付方式</span>
+                </h2>
+                <label class="yhao-cell yhao-check__label" for="s1">
+                    <div class="yhao-cell__hd">
+                        <i class="yhao-icon-wx"></i>
+                    </div>
+                    <div class="yhao-cell__bd">
+                        <p>微信支付</p>
+                    </div>
+                    <div class="yhao-cell__ft">
+                        <input type="radio" class="yhao-check" name="radio1" id="s1" checked="checked">
+                        <span class="weui-icon-checked_2"></span>
+                    </div>
+                </label>
+                <label class="yhao-cell yhao-check__label" for="s2">
+                    <div class="yhao-cell__hd">
+                        <i class="yhao-icon-xianjinzhifu"></i>
+                    </div>
+                    <div class="yhao-cell__bd">
+                        <p>现金支付</p>
+                    </div>
+                    <div class="yhao-cell__ft">
+                        <input type="radio" class="yhao-check" name="radio1" id="s2">
+                        <span class="weui-icon-checked_2"></span>
+                    </div>
+                </label>
+                <label class="yhao-cell yhao-check__label" for="s3">
+                    <div class="yhao-cell__hd">
+                        <i class="yhao-icon-VIP" style="font-size:20px!important;"></i>
+                    </div>
+                    <div class="yhao-cell__bd">
+                        <p>会员储值卡</p>
+                    </div>
+                    <div class="yhao-cell__ft">
+                        <input type="radio" class="yhao-check" name="radio1" id="s3">
+                        <span class="weui-icon-checked_2"></span>
+                    </div>
+                </label>
+                <label class="yhao-cell yhao-check__label" for="s4">
+                    <div class="yhao-cell__hd">
+                        <i class="yhao-icon-jifenzhifu"></i>
+                    </div>
+                    <div class="yhao-cell__bd">
+                        <p>会员积分支付</p>
+                    </div>
+                    <div class="yhao-cell__ft">
+                        <input type="radio" class="yhao-check" name="radio1" id="s4">
+                        <span class="weui-icon-checked_2"></span>
+                    </div>
+                </label>
+            </article>
+            <article class="yhao-cells yhao-cells_quan">
+                <h2 class="yhao-cells__title">
+                    <span>优惠券</span>
+                </h2>
+                <label class="yhao-cell yhao-check__label" for="s5">
+                    <div class="yhao-cell__hd">
+                        <i class="yhao-icon-renminbi">5</i>
+                    </div>
+                    <div class="yhao-cell__bd">
+                        <div class="yhao-cell_bd_title">5元代金券</div>
+                        <ul class="yhao-cell_bd_items">
+                            <li>无任何使用门槛</li>
+                            <li>有效期到2017.4.27</li>
+                        </ul>
+                    </div>
+                    <div class="yhao-cell__ft">
+                        <input type="checkbox" class="yhao-check" name="checkbox1" id="s5">
+                        <span class="weui-icon-checked_2"></span>
+                    </div>
+                </label>
+                <label class="yhao-cell yhao-check__label" for="s6">
+                    <div class="yhao-cell__hd">
+                        <i class="yhao-icon-renminbi">80</i>
+                    </div>
+                    <div class="yhao-cell__bd">
+                        <div class="yhao-cell_bd_title">100元代金券</div>
+                        <ul class="yhao-cell_bd_items">
+                            <li>无任何使用门槛</li>
+                            <li>有效期到2017.4.27</li>
+                        </ul>
+                    </div>
+                    <div class="yhao-cell__ft">
+                        <input type="checkbox" class="yhao-check" name="checkbox1" id="s6">
+                        <span class="weui-icon-checked_2"></span>
+                    </div>
+                </label>
+            </article>
+            <article class="yhao-cells yhao-cells_quan">
+                <h2 class="yhao-cells__title">
+                    <span>折扣券</span>
+                </h2>
+                <label class="yhao-cell yhao-check__label" for="s7">
+                    <div class="yhao-cell__hd">
+                        <i class="yhao-icon-zhe">5</i>
+                    </div>
+                    <div class="yhao-cell__bd">
+                        <div class="yhao-cell_bd_title">5折折扣券</div>
+                        <ul class="yhao-cell_bd_items">
+                            <li>无任何使用门槛</li>
+                            <li>有效期到2017.4.27</li>
+                        </ul>
+                    </div>
+                    <div class="yhao-cell__ft">
+                        <input type="radio" class="yhao-check" name="radio2" id="s7">
+                        <span class="weui-icon-checked_2"></span>
+                    </div>
+                </label>
+                <label class="yhao-cell yhao-check__label" for="s8">
+                    <div class="yhao-cell__hd">
+                        <i class="yhao-icon-zhe">9</i>
+                    </div>
+                    <div class="yhao-cell__bd">
+                        <div class="yhao-cell_bd_title">9折折扣券</div>
+                        <ul class="yhao-cell_bd_items">
+                            <li>无任何使用门槛</li>
+                            <li>有效期到2017.4.27</li>
+                        </ul>
+                    </div>
+                    <div class="yhao-cell__ft">
+                        <input type="radio" class="yhao-check" name="radio2" id="s8">
+                        <span class="weui-icon-checked_2"></span>
+                    </div>
+                </label>
+            </article>
+            <article class="yhao-cells">
+                <div class="yhao-cell">
+                    <div class="yhao-cell__hd yhao-icon-dingwei yhao-fc_warn"></div>
+                    <div class="yhao-cell__bd">福田区华强路店</div>
+                    <div class="yhao-cell__ft">2017/8/21 21:37:20</div>
+                </div>
+            </article>
+            <article class="yhao-cells yhao-cells_order">
+                <h2 class="yhao-cells__title">
+                    <span>菜单信息</span>
+                </h2>
+                <div class="yhao-cell">
+                    <div class="yhao-cell__hd">
+                        1、B1单人套餐单人
+                    </div>
+                    <div class="yhao-cell__bd">
+                        <span>32</span>
+                    </div>
+                    <div class="yhao-cell__ft">
+                        <i class="yhao-icon-renminbi" style="font-size: 16px">12.00</i>
+                    </div>
+                    <ul class="yhao-cell__fd">
+                        <li>
+                            <span class="yhao-cell_fd_name">卤鸡翅卤鸡翅+￥2.5</span>
+                            <span class="yhao-cell_fd_price">￥2.5</span>
+                            <span class="yhao-cell_fd_num">10</span>
+                        </li>
+                        <li>
+                            <span class="yhao-cell_fd_name">鸡爪(中份)</span>
+                            <span class="yhao-cell_fd_price"></span>
+                            <span class="yhao-cell_fd_num">10</span>
+                        </li>
+                    </ul>
+                    <div class="yhao-cell__bz">
+                        (桂林米粉，粉要软，免辣、免葱)
+                    </div>
+                </div>
+                <div class="yhao-cell">
+                    <div class="yhao-cell__hd">
+                        2、B1单人套餐单人
+                    </div>
+                    <div class="yhao-cell__bd">
+                        <span>32</span>
+                    </div>
+                    <div class="yhao-cell__ft">
+                        <i class="yhao-icon-renminbi" style="font-size: 16px">12.00</i>
+                    </div>
+                    <ul class="yhao-cell__fd">
+                        <li>
+                            <span class="yhao-cell_fd_name">卤鸡翅卤鸡翅+￥2.5</span>
+                            <span class="yhao-cell_fd_price">￥2.5</span>
+                            <span class="yhao-cell_fd_num">10</span>
+                        </li>
+                        <li>
+                            <span class="yhao-cell_fd_name">鸡爪(中份)</span>
+                            <span class="yhao-cell_fd_price"></span>
+                            <span class="yhao-cell_fd_num">10</span>
+                        </li>
+                    </ul>
+                    <div class="yhao-cell__bz">
+                        (桂林米粉，粉要软，免辣、免葱)
+                    </div>
+                </div>
+                <div class="yhao-cell">
+                    <div class="yhao-cell__hd">
+                        1、B1单人套餐单人
+                    </div>
+                    <div class="yhao-cell__bd">
+                        <span>32</span>
+                    </div>
+                    <div class="yhao-cell__ft">
+                        <i class="yhao-icon-renminbi" style="font-size: 16px">12.00</i>
+                    </div>
+                    <ul class="yhao-cell__fd">
+                        <li>
+                            <span class="yhao-cell_fd_name">卤鸡翅卤鸡翅+￥2.5</span>
+                            <span class="yhao-cell_fd_price">￥2.5</span>
+                            <span class="yhao-cell_fd_num">10</span>
+                        </li>
+                        <li>
+                            <span class="yhao-cell_fd_name">鸡爪(中份)</span>
+                            <span class="yhao-cell_fd_price"></span>
+                            <span class="yhao-cell_fd_num">10</span>
+                        </li>
+                    </ul>
+                    <div class="yhao-cell__bz">
+                        (桂林米粉，粉要软，免辣、免葱)
+                    </div>
+                </div>
+                <div class="yhao-cell">
+                    <div class="yhao-cell__hd">
+                        2、B1单人套餐单人
+                    </div>
+                    <div class="yhao-cell__bd">
+                        <span>32</span>
+                    </div>
+                    <div class="yhao-cell__ft">
+                        <i class="yhao-icon-renminbi" style="font-size: 16px">12.00</i>
+                    </div>
+                    <ul class="yhao-cell__fd">
+                        <li>
+                            <span class="yhao-cell_fd_name">卤鸡翅卤鸡翅+￥2.5</span>
+                            <span class="yhao-cell_fd_price">￥2.5</span>
+                            <span class="yhao-cell_fd_num">10</span>
+                        </li>
+                        <li>
+                            <span class="yhao-cell_fd_name">鸡爪(中份)</span>
+                            <span class="yhao-cell_fd_price"></span>
+                            <span class="yhao-cell_fd_num">10</span>
+                        </li>
+                    </ul>
+                    <div class="yhao-cell__bz">
+                        (桂林米粉，粉要软，免辣、免葱)
+                    </div>
+                </div>
+                <div class="yhao-cell">
+                    <div class="yhao-cell__hd">
+                        1、B1单人套餐单人
+                    </div>
+                    <div class="yhao-cell__bd">
+                        <span>32</span>
+                    </div>
+                    <div class="yhao-cell__ft">
+                        <i class="yhao-icon-renminbi" style="font-size: 16px">12.00</i>
+                    </div>
+                    <ul class="yhao-cell__fd">
+                        <li>
+                            <span class="yhao-cell_fd_name">卤鸡翅卤鸡翅+￥2.5</span>
+                            <span class="yhao-cell_fd_price">￥2.5</span>
+                            <span class="yhao-cell_fd_num">10</span>
+                        </li>
+                        <li>
+                            <span class="yhao-cell_fd_name">鸡爪(中份)</span>
+                            <span class="yhao-cell_fd_price"></span>
+                            <span class="yhao-cell_fd_num">10</span>
+                        </li>
+                    </ul>
+                    <div class="yhao-cell__bz">
+                        (桂林米粉，粉要软，免辣、免葱)
+                    </div>
+                </div>
+                <div class="yhao-cell">
+                    <div class="yhao-cell__hd">
+                        2、B1单人套餐单人
+                    </div>
+                    <div class="yhao-cell__bd">
+                        <span>32</span>
+                    </div>
+                    <div class="yhao-cell__ft">
+                        <i class="yhao-icon-renminbi" style="font-size: 16px">12.00</i>
+                    </div>
+                    <ul class="yhao-cell__fd">
+                        <li>
+                            <span class="yhao-cell_fd_name">卤鸡翅卤鸡翅+￥2.5</span>
+                            <span class="yhao-cell_fd_price">￥2.5</span>
+                            <span class="yhao-cell_fd_num">10</span>
+                        </li>
+                        <li>
+                            <span class="yhao-cell_fd_name">鸡爪(中份)</span>
+                            <span class="yhao-cell_fd_price"></span>
+                            <span class="yhao-cell_fd_num">10</span>
+                        </li>
+                    </ul>
+                    <div class="yhao-cell__bz">
+                        (桂林米粉，粉要软，免辣、免葱)
+                    </div>
+                </div>
+                <div class="yhao-cell">
+                    <div class="yhao-cell__hd">
+                        1、B1单人套餐单人
+                    </div>
+                    <div class="yhao-cell__bd">
+                        <span>32</span>
+                    </div>
+                    <div class="yhao-cell__ft">
+                        <i class="yhao-icon-renminbi" style="font-size: 16px">12.00</i>
+                    </div>
+                    <ul class="yhao-cell__fd">
+                        <li>
+                            <span class="yhao-cell_fd_name">卤鸡翅卤鸡翅+￥2.5</span>
+                            <span class="yhao-cell_fd_price">￥2.5</span>
+                            <span class="yhao-cell_fd_num">10</span>
+                        </li>
+                        <li>
+                            <span class="yhao-cell_fd_name">鸡爪(中份)</span>
+                            <span class="yhao-cell_fd_price"></span>
+                            <span class="yhao-cell_fd_num">10</span>
+                        </li>
+                    </ul>
+                    <div class="yhao-cell__bz">
+                        (桂林米粉，粉要软，免辣、免葱)
+                    </div>
+                </div>
+                <div class="yhao-cell">
+                    <div class="yhao-cell__hd">
+                        2、B1单人套餐单人
+                    </div>
+                    <div class="yhao-cell__bd">
+                        <span>32</span>
+                    </div>
+                    <div class="yhao-cell__ft">
+                        <i class="yhao-icon-renminbi" style="font-size: 16px">12.00</i>
+                    </div>
+                    <ul class="yhao-cell__fd">
+                        <li>
+                            <span class="yhao-cell_fd_name">卤鸡翅卤鸡翅+￥2.5</span>
+                            <span class="yhao-cell_fd_price">￥2.5</span>
+                            <span class="yhao-cell_fd_num">10</span>
+                        </li>
+                        <li>
+                            <span class="yhao-cell_fd_name">鸡爪(中份)</span>
+                            <span class="yhao-cell_fd_price"></span>
+                            <span class="yhao-cell_fd_num">10</span>
+                        </li>
+                    </ul>
+                    <div class="yhao-cell__bz">
+                        (桂林米粉，粉要软，免辣、免葱)
+                    </div>
+                </div>
+            </article>
+        </div>
+    </div>
+    <div class="yhao-Big-Bottom-Nav">
+        <div class="yhao-caidan">
+            <div class="yhao-caidan_total">
+                <span>菜单合计:</span>
+                <i class="yhao-icon-renminbi"></i>
+                <span>347.00</span>
+            </div>
+            <div class="yhao-caidan_actual">
+                <span>实付款：</span>
+                <i class="yhao-icon-renminbi"></i>
+                <span>327.00</span>
+            </div>
+            <div class="yhao-caidan_youhui">
+                (已优惠￥27.00)
+            </div>
+        </div>
+        <div class="yhao-toback">
+            <a class="yhao-btn yhao-btn_submit">
+                支付
+            </a>
+            <a class="yhao-btn yhao-btn_back yhao-icon-back1">
+                返回
+            </a>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    //    document.body.addEventListener('touchstart', function () { });
+</script>
+<script src="zepto.min.js"></script>
+<script>
+    //以下代码不包含业务逻辑，只用于弹窗组件,后期将单独封装一个组件
+    //点击图片弹窗
+    $(function () {
+        var yhaoMasks = $(".yhao-mask");
+        var actionsheet = $("#Actionsheet");
+        var close = $(".yhao-icon-close1");
+        yhaoMasks.click(function(){
+            console.log($(this))
+            actionsheet.fadeIn(100)
+            close.click(function(){
+                actionsheet.fadeOut(100)
+            })
+        })
+    })
+
+</script>
+<script>
+    var wrapper = document.getElementById('mwrapper');
+    var inner = document.getElementById('inner');
+    var p_w = inner.getElementsByClassName('marqueeText')[0].offsetWidth;
+    var wrapper_w = wrapper.offsetWidth;
+    window.onload=function fun() {
+
+        console.log(p_w)
+        if (wrapper_w > p_w) {
+            return false;
+        }
+        inner.innerHTML += inner.innerHTML;
+        inner.style.width = p_w * 2 + 'px';
+        setTimeout("fun1()", 2000);
+    }
+    function fun1() {
+        if (p_w > wrapper.scrollLeft) {
+            wrapper.scrollLeft++;
+            setTimeout("fun1()", 30);
+        }
+        else {
+            setTimeout("fun2()", 2000);
+        }
+    }
+
+    function fun2() {
+        wrapper.scrollLeft = 0;
+        fun1();
+    }
+</script>
+</html>
